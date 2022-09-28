@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript" src="stock-tracker.js"> </script>
+	<link rel="stylesheet" type="text/css" href="site.css"/>
+</head>
+<body>
+<div id = "main_container">
+  <div class="modal-content">
+    <div class="container">
+       <input type="search" id="symbol_search_input" placeholder="Search symbol by keyword" name="symbol_search_input1" required>
+	   <button type="button" id="symbol_search_button" class="searchbtn" onclick="Symbol.searchSymbol()">Search</button>
+	   <select name="symbol_search_select1" id="symbol_search_select" onchange="Symbol.getStockData();">
+		  <option value="Choose Symbol">Choose Symbol</option>
+		  <option value="IBM">IBM</option>
+	   </select>
+    </div>
+  </div>
+   <div class="plot-content">
+	<div id ="plot_container" class= "plot_containercls">
+		<div id = "chart", style = "width: 1300px; height: 600px">
+	</div>
+    <div>
+</div>
+</body>
+</html>

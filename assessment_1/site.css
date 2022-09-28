@@ -1,0 +1,164 @@
+input[type=text] {
+  width: 99.9%;
+  padding: 2px 4px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.flex-box {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.display_upload_image_cls {
+	padding: 2px;
+}
+
+/* Set a style for all buttons */
+button {
+  color: white;
+  padding: 1px;
+  margin: 0.5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.loginbtn {
+  width: auto;
+  background-color: #04AA6D;
+}
+
+.cancelbtn {
+  width: auto;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 1px;
+  background-color:#f1f1f1;
+}
+
+/* The Modal styles(popup window)*/
+.modal {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+}
+
+.image_container, .file_container {
+  background-color: #fefefe;
+  border: 1px solid #888;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn {
+     width: 100%;
+  }
+  .loginbtn {
+    width: 100%
+  }
+}
+
+/* table style */
+.tabular_container {
+	border: 1px solid #888;
+	padding: 2px;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+	margin: 0 auto;
+}
+
+table th {
+    background-color: #F7F7F7;
+    color: #333;
+    font-weight: bold;
+}
+table th, table td {
+    padding: 5px;
+    border-color: #ccc;
+}
+
+thead, tbody { display: block; }
+
+tbody {
+	height: 150px;      
+    overflow-y: auto;    
+    overflow-x: hidden;  
+}
+
+/*tooltip*/
+
+.pc-charts-tooltip {
+	font-family: arial;
+	position: absolute;
+	width: auto;
+	height: auto;
+	padding: 5px;
+	z-index: 998;
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #b2b2b2;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.image_property {
+	text-align: center;
+}
+.display_image_prop_cls {
+	margin-left: 25px;
+}
+
+/*file upload styles*/
+.box {
+    background-color: #f7f4f4;
+    padding: 0px 1px;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: 0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile-1 + label {
+    color: #d3394c;
+    border: 2px solid currentColor;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    color: #722040;
+}
